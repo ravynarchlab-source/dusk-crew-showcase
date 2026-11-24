@@ -2,7 +2,7 @@
 
 # Dusk Crew
 
-**First-person co-op horror for one or two players. Free demo on itch.io — 21 December 2026.**
+**First-person co-op horror for one or two players. Free demo on itch.io, 21 December 2026.**
 
 Every light in the valley went out. You are the line crew sent back to turn them on.<br>
 By day you build light. By night you walk out of it to bring people home.<br>
