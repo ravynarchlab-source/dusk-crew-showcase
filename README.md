@@ -15,8 +15,8 @@ Something is watching from the dark, and the people it takes do not stay gone.
 Daylight is for work: fell trees, gather scrap, craft tools, and wire up lamp posts and a generator. When the sun goes, what you built is the only safe ground. You go out anyway, because people are sleepwalking in the dark and you are the crew that brings them home.
 
 <p>
-  <img src="media/shots/golden-hour.jpg" alt="A street at golden hour: a house, a tree and a creek running through low fog." width="49%">
-  <img src="media/shots/black-moon.jpg" alt="The same street at night under a black moon with a thin white corona. The houses are barely lit." width="49%">
+  <img src="media/shots/golden-hour.jpg" alt="A street at golden hour: a house, a tree and a creek running through low fog." width="410">
+  <img src="media/shots/black-moon.jpg" alt="The same street at night under a black moon with a thin white corona. The houses are barely lit." width="410">
 </p>
 
 ### The creature
@@ -46,8 +46,8 @@ In development for the demo. Your tools float: a beam from the cuff tethers the 
 ## Screenshots
 
 <p>
-  <img src="media/shots/lookout.jpg" alt="View over fields and a fence line toward the houses of the district at golden hour." width="49%">
-  <img src="media/shots/dusk.jpg" alt="The same view minutes later: a pink and violet dusk sky, fog settling on the fields." width="49%">
+  <img src="media/shots/lookout.jpg" alt="View over fields and a fence line toward the houses of the district at golden hour." width="410">
+  <img src="media/shots/dusk.jpg" alt="The same view minutes later: a pink and violet dusk sky, fog settling on the fields." width="410">
 </p>
 
 ## Devlog
@@ -64,15 +64,13 @@ In development for the demo. Your tools float: a beam from the cuff tethers the 
 
 ## Fact sheet
 
-| | |
-|---|---|
-| Developer | RAVYN |
-| Genre | First-person co-op horror |
-| Players | 1–2. Online co-op with a room code, or solo with a bot teammate |
-| Platform | Windows PC |
-| Engine | Unity (URP), Photon PUN 2 |
-| Demo | Free on itch.io, 21 December 2026 |
-| Status | In development. Footage is from work-in-progress builds and test captures, and will change |
+**Developer:** RAVYN<br>
+**Genre:** First-person co-op horror<br>
+**Players:** 1–2. Online co-op with a room code, or solo with a bot teammate<br>
+**Platform:** Windows PC<br>
+**Engine:** Unity (URP), Photon PUN 2<br>
+**Demo:** Free on itch.io, 21 December 2026<br>
+**Status:** In development. Footage is from work-in-progress builds and test captures, and will change
 
 ## Press
 
