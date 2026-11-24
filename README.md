@@ -1,4 +1,4 @@
-<img src="media/hero.gif" alt="Dusk Crew footage: a street goes from golden hour to night under a black moon, an axe prints into the player's hands as a cyan hologram, and a Returned erupts with blades and lunges at the camera." width="100%">
+<img src="media/reel.gif" alt="Dusk Crew footage: the district goes from golden hour to night under a black moon, then a Returned walks out of the dusk, erupts with black blades and lunges at the camera." width="100%">
 
 # Dusk Crew
 
@@ -36,8 +36,6 @@ Everything is seen through a helmet camera. Human faces are mosaicked, the way f
 ### Holo-print
 
 Tools are printed, not drawn. The wrist cuff projects a grid, traces the tool as a wireframe line by line, fills it with voxels, and it lands in your hands as worn wood and steel.
-
-<img src="media/holo-print.gif" alt="First-person view at dusk: an axe, then a hammer, print into the player's hands as a cyan wireframe and turn solid." width="100%">
 
 ### Kinetic Rig
 
