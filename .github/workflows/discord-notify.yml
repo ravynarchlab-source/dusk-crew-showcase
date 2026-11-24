@@ -1,0 +1,63 @@
+# Posts to Discord when a release is published or a devlog entry is added.
+# A "devlog entry" = a new paragraph starting with ** under "## Devlog" in README.md, pushed to main.
+# Needs the repo secret DISCORD_WEBHOOK_URL (the owner creates it). If it is missing, the job is skipped, not failed.
+name: Discord notify
+
+on:
+  release:
+    types: [published]
+  push:
+    branches: [main]
+    paths: [README.md]
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+    steps:
+      - name: Skip when no webhook is set
+        if: env.DISCORD_WEBHOOK_URL == ''
+        run: echo "DISCORD_WEBHOOK_URL is not set; nothing posted."
+
+      - uses: actions/checkout@v6
+        if: env.DISCORD_WEBHOOK_URL != '' && github.event_name == 'push'
+        with:
+          fetch-depth: 0
+
+      - name: Collect messages
+        if: env.DISCORD_WEBHOOK_URL != ''
+        env:
+          EVENT: ${{ github.event_name }}
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+          REL_NAME: ${{ github.event.release.name }}
+          REL_TAG: ${{ github.event.release.tag_name }}
+          REL_URL: ${{ github.event.release.html_url }}
+          PAGE: https://github.com/${{ github.repository }}#devlog
+        run: |
+          : > messages.txt
+          if [ "$EVENT" = release ]; then
+            printf 'New release: %s\n%s\n' "${REL_NAME:-$REL_TAG}" "$REL_URL" | jq -Rs . >> messages.txt
+          else
+            devlog() { git show "$1:README.md" 2>/dev/null | awk '/^## /{d=($0=="## Devlog")} d && /^\*\*/'; }
+            if git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then devlog "$BEFORE" > old.txt; else : > old.txt; fi
+            devlog "$AFTER" > new.txt
+            { grep -Fxv -f old.txt new.txt || true; } | awk 'NR<=3' | while IFS= read -r line; do
+              printf 'Devlog: %s\n%s\n' "$line" "$PAGE" | jq -Rs . >> messages.txt
+            done
+          fi
+          echo "messages to post: $(wc -l < messages.txt)"
+
+      - name: Post to Discord
+        if: env.DISCORD_WEBHOOK_URL != ''
+        run: |
+          while IFS= read -r msg; do
+            jq -n --argjson c "$msg" '{content: $c, allowed_mentions: {parse: []}}' |
+              curl -sS --fail -o /dev/null -H 'Content-Type: application/json' -d @- "$DISCORD_WEBHOOK_URL"
+            sleep 1
+          done < messages.txt
