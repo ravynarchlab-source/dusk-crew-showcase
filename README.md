@@ -1,8 +1,8 @@
-<img src="media/reel.gif" alt="Dusk Crew footage: the district goes from golden hour to night under a black moon, then a Returned walks out of the dusk, erupts with black blades and lunges at the camera." width="100%">
+<img src="media/shots/lookout.jpg" alt="Dusk Crew, work in progress: view over fields and a fence line toward the houses of the district at golden hour." width="100%">
 
 # Dusk Crew
 
-**First-person co-op horror for one or two players. Free demo on itch.io, 21 December 2026.**
+**First-person co-op horror for one or two players. Free demo on itch.io when it's ready.**
 
 Every light in the valley went out. You are the line crew sent back to turn them on.<br>
 By day you build light. By night you walk out of it to bring people home.<br>
@@ -23,13 +23,9 @@ Daylight is for work: fell trees, gather scrap, craft tools, and wire up lamp po
 
 It watches first. At dusk you catch its eyes on a perch above the street, then nothing. It takes people in the gaps your light does not reach, and nothing you carry can kill it. Light is the only thing it respects.
 
-<img src="media/shots/the-creature.jpg" alt="Four pale eyes shining out of black. Model render of the creature." width="100%">
-
 ### The Returned
 
 Anyone the creature takes can come back, and they come back wrong: black blades tear out of the body, and it hunts whoever watched it happen. Strong light melts the blades for about two seconds. That is your window to hit it. Then you burn what is left.
-
-<img src="media/shots/the-returned.jpg" alt="A Returned at dusk, long black blades erupting from its back and arms. Its face is mosaicked." width="100%">
 
 Everything is seen through a helmet camera. Human faces are mosaicked, the way footage is censored before release. The creature's never is.
 
@@ -44,8 +40,7 @@ In development for the demo. Your tools float: a beam from the cuff tethers the 
 ## Screenshots
 
 <p>
-  <img src="media/shots/lookout.jpg" alt="View over fields and a fence line toward the houses of the district at golden hour." width="410">
-  <img src="media/shots/dusk.jpg" alt="The same view minutes later: a pink and violet dusk sky, fog settling on the fields." width="410">
+  <img src="media/shots/dusk.jpg" alt="The same view minutes later: a pink and violet dusk sky, fog settling on the fields." width="820">
 </p>
 
 ## Devlog
@@ -53,8 +48,6 @@ In development for the demo. Your tools float: a beam from the cuff tethers the 
 **20 Nov 2026 — Tools leave the hands.** First step of the Kinetic Rig: an axe floats on a tether from the cuff and lands its first strikes in a greybox test. Sending it off to work alone is next.
 
 **20 Nov 2026 — Holo-print.** Equipping a tool now prints it: grid, wireframe, voxels, then the real material.
-
-**20 Nov 2026 — The Returned.** First look pass: the eruption, the blades melting under strong light, and the finisher.
 
 **20 Nov 2026 — A whole day.** The district now runs dawn, noon, golden hour, dusk and a night under the black moon.
 
@@ -67,11 +60,11 @@ In development for the demo. Your tools float: a beam from the cuff tethers the 
 **Players:** 1–2. Online co-op with a room code, or solo with a bot teammate<br>
 **Platform:** Windows PC<br>
 **Engine:** Unity (URP), Photon PUN 2<br>
-**Demo:** Free on itch.io, 21 December 2026<br>
+**Demo:** Free on itch.io when it's ready<br>
 **Status:** In development. Footage is from work-in-progress builds and test captures, and will change
 
 ## Press
 
-You may use the images and GIFs on this page in coverage of Dusk Crew. Please credit RAVYN.
+You may use the images on this page in coverage of Dusk Crew. Please credit RAVYN.
 
 Contact: [Discord — RAVYN: Riftfall](https://discord.gg/YMws83FPS) · [github.com/ravynarchlab-source](https://github.com/ravynarchlab-source)
